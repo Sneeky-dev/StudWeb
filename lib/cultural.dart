@@ -15,7 +15,7 @@ class Cultural extends StatelessWidget {
               width: MediaQuery.of(context).size.width - 30.0,
               height: MediaQuery.of(context).size.height - 50.0,
               child: GridView.count(
-                crossAxisCount: 3,
+                crossAxisCount: 2,
                 primary: false,
                 crossAxisSpacing: 10.0,
                 mainAxisSpacing: 15.0,
