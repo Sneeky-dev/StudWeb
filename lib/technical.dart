@@ -22,45 +22,57 @@ class Technical extends StatelessWidget {
                 mainAxisSpacing: 15.0,
                 childAspectRatio: 0.8,
                 children: <Widget>[
-                  _buildCard(
-                      'Competitive Coding',
-                      'assets/cc.jpg',
-                      'If you\'ve ever thought about competitive coding, all you\'ve got to do is start now. Doesn\'t matter which class or branch you are in. Everyone can code and everyone can be competitive. Basically, all you\'ve got to have is the right mindset and the right skill set.',
-                      'https://axios-iiitl.github.io/',
-                      context),
-                  _buildCard(
-                      'Web Devlopment',
-                      'assets/webd.png',
-                      'For many professional coders, demand and salary are only part of the equation. The chance to meet and overcome new challenges on a daily basis, to conceptualize and introduce personalized artistic solutions, makes for a fresh and exciting career choice that never gets dull.',
-                      'https://axios-iiitl.github.io/',
-                      context),
-                  _buildCard(
-                      'App Development',
-                      'assets/appd.png',
-                      'With the exploding popularity of smartphones and tablets, mobile application development is becoming a more and more popular medium of software creation. The creation of mobile applications draws much of its roots from traditional software development. The end result, however, is software intended to utilize the unique features and hardware of mobile devices.',
-                      'https://axios-iiitl.github.io/',
-                      context),
-                  _buildCard(
-                      'Machine Learning',
-                      'assets/ml.png',
-                      'Machine learning is the concept that a computer program can learn and adapt to new data without human interference. Machine learning is a field of artificial intelligence (AI) that keeps a computer’s built-in algorithms current regardless of changes in the worldwide economy.',
-                      'https://chat.whatsapp.com/Fkc2LD1XGFBBWaQk9cDbIZ',
-                      context),
-                  _buildCard(
-                      'Cyber Security',
-                      'assets/Cybersecurity.png',
-                      'Cyber security refers to the body of technologies, processes, and practices designed to protect networks, devices, programs, and data from attack, damage, or unauthorized access. Cyber security may also be referred to as information technology security.',
-                      'https://chat.whatsapp.com/Fkc2LD1XGFBBWaQk9cDbIZ',
-                      context),
-                  _buildCard(
-                      'Artificial Intelligence',
-                      'assets/ai.jpg',
-                      'Artificial intelligence (AI) is wide-ranging branch of computer science concerned with building smart machines capable of performing tasks that typically require human intelligence. AI is an interdisciplinary science with multiple approaches, but advancements in machine learning and deep learning are creating a paradigm shift in virtually every sector of the tech industry. ',
-                      'https://axios-iiitl.github.io/',
-                      context),
+                  Container(
+                    child: _buildCard(
+                        'Competitive Coding',
+                        'assets/cc.jpg',
+                        'If you\'ve ever thought about competitive coding, all you\'ve got to do is start now. Doesn\'t matter which class or branch you are in. Everyone can code and everyone can be competitive. Basically, all you\'ve got to have is the right mindset and the right skill set.',
+                        'https://axios-iiitl.github.io/',
+                        context),
+                  ),
+                  Container(
+                    child: _buildCard(
+                        'Web Devlopment',
+                        'assets/webd.png',
+                        'For many professional coders, demand and salary are only part of the equation. The chance to meet and overcome new challenges on a daily basis, to conceptualize and introduce personalized artistic solutions, makes for a fresh and exciting career choice that never gets dull.',
+                        'https://axios-iiitl.github.io/',
+                        context),
+                  ),
+                  Container(
+                    child: _buildCard(
+                        'App Development',
+                        'assets/appd.png',
+                        'With the exploding popularity of smartphones and tablets, mobile application development is becoming a more and more popular medium of software creation. The creation of mobile applications draws much of its roots from traditional software development. The end result, however, is software intended to utilize the unique features and hardware of mobile devices.',
+                        'https://axios-iiitl.github.io/',
+                        context),
+                  ),
+                  Container(
+                    child: _buildCard(
+                        'Machine Learning',
+                        'assets/ml.png',
+                        'Machine learning is the concept that a computer program can learn and adapt to new data without human interference. Machine learning is a field of artificial intelligence (AI) that keeps a computer’s built-in algorithms current regardless of changes in the worldwide economy.',
+                        'https://chat.whatsapp.com/Fkc2LD1XGFBBWaQk9cDbIZ',
+                        context),
+                  ),
+                  Container(
+                    child: _buildCard(
+                        'Cyber Security',
+                        'assets/Cybersecurity.png',
+                        'Cyber security refers to the body of technologies, processes, and practices designed to protect networks, devices, programs, and data from attack, damage, or unauthorized access. Cyber security may also be referred to as information technology security.',
+                        'https://chat.whatsapp.com/Fkc2LD1XGFBBWaQk9cDbIZ',
+                        context),
+                  ),
+                  Container(
+                    child: _buildCard(
+                        'Artificial Intelligence',
+                        'assets/ai.jpg',
+                        'Artificial intelligence (AI) is wide-ranging branch of computer science concerned with building smart machines capable of performing tasks that typically require human intelligence. AI is an interdisciplinary science with multiple approaches, but advancements in machine learning and deep learning are creating a paradigm shift in virtually every sector of the tech industry. ',
+                        'https://axios-iiitl.github.io/',
+                        context),
+                  ),
                 ],
               )),
-          SizedBox(height: 15.0)
+          SizedBox(height: 100.0)
         ],
       ),
     );
