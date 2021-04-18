@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'cultural.dart';
 import 'extras.dart';
+import 'logout.dart';
 import 'technical.dart';
 
 class MyApp extends StatelessWidget {
@@ -25,11 +26,11 @@ class _MyHomePageState extends State<MyHomePage>
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 3, vsync: this);
+    _tabController = TabController(length: 4, vsync: this);
   }
 
   _launchURL() async {
-    const url = '';
+    const url = 'https://equinox.iiitl.ac.in/index.html';
     if (await canLaunch(url)) {
       await launch(url, forceSafariVC: false, forceWebView: false);
     } else {
@@ -89,27 +90,37 @@ class _MyHomePageState extends State<MyHomePage>
                         fontFamily: 'Varela',
                         fontSize: 21.0,
                       )),
+                ),
+                Tab(
+                  child: Text('LogOut',
+                      style: TextStyle(
+                        fontFamily: 'Varela',
+                        fontSize: 21.0,
+                      )),
                 )
               ]),
           Container(
-              height: MediaQuery.of(context).size.height - 50.0,
-              width: double.infinity,
-              child: TabBarView(controller: _tabController, children: [
-                Technical(),
-                Cultural(),
-                Extras(),
-              ]))
+            height: MediaQuery.of(context).size.height - 50.0,
+            width: double.infinity,
+            child: TabBarView(controller: _tabController, children: [
+              Technical(),
+              Cultural(),
+              Extras(),
+              Logout(),
+            ]),
+          )
         ],
       ),
+
       floatingActionButton: FloatingActionButton(
         onPressed: _launchURL,
         elevation: 10.0,
         backgroundColor: Colors.black,
         child: Image(
-          image: AssetImage('assets/iiiitl.png'),
+          image: AssetImage('assets/iiitl.png'),
         ),
       ),
-
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
 //      bottomNavigationBar: BottomBar(),
     );
   }
