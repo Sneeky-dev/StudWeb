@@ -57,12 +57,19 @@ class ExtrasDetail extends StatelessWidget {
                 child:Image.asset(image),
               ),
             ),
-            FlatButton(
-              child: Center(
-                child: Text(''),
+          FlatButton(
+          color: Colors.red,
+          child: Center(
+            child: Text(
+              'Open It',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 16,
               ),
-              onPressed:_launchURL1,
-            )
+            ),
+          ),
+          onPressed: _launchURL1,
+        )
           ]
       ),
 
